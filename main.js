@@ -1,4 +1,4 @@
-import { MY_API_KEY, API_NINJA_KEY } from './config.js';
+import { MY_API_KEY } from './config.js';
 
 document.getElementById('muscle-form').addEventListener('submit', function(event) {
     event.preventDefault();
