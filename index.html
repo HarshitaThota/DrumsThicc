@@ -13,6 +13,30 @@
   </head>
   <body>
     Macros and Muscles
-    <script src = "main.js" type =" module" ></script>
+    
+    <form id="muscle-form">
+        <label for="muscle-select">Select Muscle Group:</label>
+        <select id="muscle-select" name="muscle">
+            <option value="Biceps">Biceps</option>
+            <option value="Triceps">Triceps</option>
+            <option value="Chest">Chest</option>
+            <option value="Back">Back</option>
+            <option value="Legs">Legs</option>
+            <option value="Abs">Abs</option>
+            <option value="Stretching">Stretching</option>
+            <option value="Warm Up">Warm Up</option>
+            <option value="Lats">Lats</option>
+            <option value="Hamstring">Hamstring</option>
+            <option value="Calves">Calves</option>
+            <option value="Quadriceps">Quadriceps</option>
+            <option value="Trapezius">Trapezius</option>
+            <option value="Shoulders">Shoulders</option>
+            <option value="Glutes">Glutes</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="workouts"></div>
+    <script src = "main.js" type = "module" ></script>
+  </body>
     
 </html>
