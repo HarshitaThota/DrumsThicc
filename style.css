@@ -7,29 +7,27 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(rgb(147, 236, 204), rgb(54, 6, 243));
+    background-image: linear-gradient(rgb(141, 241, 231), rgb(54, 6, 243));
 
-
+    
 }
 
-/* Form styling */
 form {
-    /* margin: 20px;
-    text-align: center; */
-    margin: 20px auto; /* Center the form horizontally with some margin */
+    margin: 20px auto;
     text-align: center;
-    max-width: 600px; /* Increase the maximum width of the form */
-    padding: 40px; /* Add more padding around the form elements */
-    border: 2px solid #ccc; /* Add a border for better visibility */
-    border-radius: 10px; /* Rounded corners for the form */
-    background-color: #fff; /* Background color for the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    padding: 40px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    
 }
+
 
 label {
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 10px;
+
 }
 
 select, button {
@@ -49,8 +47,8 @@ select, button {
 
 /* Individual workout container */
 .workout-container {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #f1e1e137;
+    border: 1px solid #4fd989;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -70,6 +68,115 @@ select, button {
 }
 
 .workout-container strong {
-    color: #cb0d72;
+    color: #3c0d3f;
+}
+.submit-button {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: beige;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
+.submit-button:hover {
+    background-color: #8fdbf0;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    background-color: #003f7f;
+    transform: scale(1);
+}
+
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+    text-align: center;
+    margin: 20px auto;
+    color:rgb(65, 70, 232);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(202, 233, 246);
+    box-shadow: 3px 3px 5px black;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(196, 178, 240);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: rgb(202, 233, 246);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%
+}
+
+.menu-button{
+    display: block;
+}
+
+@media(max-width: 800px){
+    .hideonMobile{
+        display : none;;
+    }
+}
+
+@media(max-width: 800px){
+    .sidebar{
+        width: 100%;
+    }
+}
