@@ -96,10 +96,10 @@ select, button {
 .title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 150px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.726);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.726);
     text-align: center;
     margin: 20px auto;
-    color:rgb(65, 70, 232);
+    color: rgba(54, 255, 208, 0.876);
 }
 
 *{
