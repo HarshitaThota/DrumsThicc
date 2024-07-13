@@ -62,3 +62,4 @@ function fetchWorkoutData(muscle) {
         console.log(err);
     });
 }
+

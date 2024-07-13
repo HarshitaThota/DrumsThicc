@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>FitFolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "../style.css">
+
+  </head>
+  <body>
+    <nav>
+      <ul class = "sidebar">
+        <li onclick="hideSidebar()"><a href = "#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+        <li><a href = "./logger.html"> Workout Logger</a> </li>
+        <li><a href = "#"> Exercise Ideas</a> </li>
+        <li><a href = "#"> Login</a> </li>
+        <li><a href = "#"> About Us</a> </li>
+      </ul>
+      <ul>
+        <li><a class = "hideonMobile" href = "../index.html"> FitFolio</a> </li>
+        <li><a class = "hideonMobile" href = "#"> Workout Logger</a> </li>
+        <li><a class = "hideonMobile" href = "../Workout API/exercise.html"> Exercise Ideas</a> </li>
+        <li><a class = "hideonMobile" href = "#"> Login</a> </li>
+        <li><a class = "hideonMobile" href = "#"> About Us</a> </li>
+        <li class = "menu-button" ><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
+      </ul>
+    </nav>
+    <script src="navbar.js"></script>
+
+    <h1 class="wl">Workout Logger</h1>
+    
+
+  
+    <div class="container mt-5">
+
+      
+      <form id="workout-form">
+        <div class="form-group">
+          <label for="workout-type">Workout Type:</label>
+          <input type="text" class="form-control" id="workout-type" name="workout-type" placeholder="e.g., Push, Pull, Legs" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="workout-description">Workout Description:</label>
+          <textarea class="form-control" id="workout-description" name="workout-description" rows="4" placeholder="Describe your workout..." required></textarea>
+        </div>
+  
+        <div class="form-group">
+          <label for="workout-duration">Duration (minutes):</label>
+          <input type="number" class="form-control" id="workout-duration" name="workout-duration" placeholder="Enter duration in minutes" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="workout-weight">Weight (lbs) (optional):</label>
+          <input type="number" class="form-control" id="workout-weight" name="workout-weight" placeholder="Enter weight used (optional)">
+        </div>
+  
+        <div class="form-group">
+          <label for="workout-sets">Sets (optional):</label>
+          <input type="number" class="form-control" id="workout-sets" name="workout-sets" placeholder="Enter number of sets (optional)">
+        </div>
+  
+        <div class="form-group">
+          <label for="workout-reps">Reps per Set (optional):</label>
+          <input type="number" class="form-control" id="workout-reps" name="workout-reps" placeholder="Enter reps per set (optional)">
+        </div>
+  
+        <button type="submit" class="btn btn-primary">Log Workout</button>
+      </form>
+    </div>
+
+
+
+
+
+  <script src = "../main.js" type = "module"></script>
+  </body>
+    
+</html>

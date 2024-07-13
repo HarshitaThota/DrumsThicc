@@ -180,3 +180,8 @@ nav li:first-child{
         width: 100%;
     }
 }
+
+.wl{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
